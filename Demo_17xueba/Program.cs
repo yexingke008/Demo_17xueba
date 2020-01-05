@@ -14,7 +14,7 @@ namespace Demo_17xueba
             //    driver.Navigate().GoToUrl("https://xue.17xueba.com/views/activity/wishes/view.vpage?id=35&type=3&p=5e09a152246cff75f8669c69");  //driver.Url = "http://www.baidu.com"是一样的
 
             DateTime startTime,ones ;
-            startTime = DateTime.Now;
+            startTime = DateTime.Now; 
 
             int count = 100;
             for (int i = 0; i < count; i++)
