@@ -16,7 +16,7 @@ namespace Demo_17xueba
             DateTime startTime,ones ;
             startTime = DateTime.Now; 
 
-            int count = 100;
+            int count = 1000;
             for (int i = 0; i < count; i++)
             {
                 try
@@ -27,9 +27,9 @@ namespace Demo_17xueba
                     {
                         sw.Start();
                         driver.Navigate().GoToUrl("https://xue.17xueba.com/views/activity/wishes/view.vpage?id=35&type=3&p=5e09a152246cff75f8669c69");
-                        Thread.Sleep(new Random().Next(2, 10) * 1000);
+                        Thread.Sleep(new Random().Next(1, 2) * 1000);
                         driver.FindElements(By.ClassName("wishes-btn"))[0].Click(); //模拟鼠标点击元素
-                        Thread.Sleep(new Random().Next(2, 10) * 1000);
+                        Thread.Sleep(new Random().Next(1, 2) * 1000);
 
                         var byXPath = driver.FindElements(By.XPath("/html/body/div/section/div/section/div[2]/div[1]/div/div/div[2]/div[3]/div"));
 
